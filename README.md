@@ -1,3 +1,8 @@
+This fork allows one to use `deb-get` on still supported Ubuntu 18.04 LTS to install most of the software.  
+Original README.md is below.
+
+---
+
 <h1 align="center">
   <img src=".github/deb-get-logo.png" alt="deb-get">
   <br />
