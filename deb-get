@@ -1244,7 +1244,7 @@ function deb_deadbeef() {
     SUMMARY="The ultimate music player"
 }
 
-function deb_dropbox() {
+function disabled_deb_dropbox() {
     ARCHS_SUPPORTED="amd64 i386"
     URL="https://linux.dropbox.com/packages/ubuntu/$(curl -s "https://linux.dropbox.com/packages/ubuntu/" | grep "${HOST_ARCH}.deb" | sed -e 's/<[^>]*>//g' | grep -v nautilus | cut -d' ' -f1 | tail -n1)"
     VERSION_PUBLISHED="$(echo "${URL}" | cut -d'_' -f2)"

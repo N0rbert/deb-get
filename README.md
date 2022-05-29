@@ -152,7 +152,6 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/debian.png" align="top" width="20" /> [Docker Engine](https://www.docker.com/) (`docker-ce`) - <i>Open source containerization technology for building and containerizing your applications.</i><br />
 <img src=".github/direct.png" align="top" width="20" /> [Docker Desktop](https://www.docker.com/products/docker-desktop/) (`docker-desktop`) - <i>The fastest way to containerize applications.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [draw.io](https://www.diagrams.net) (`draw.io`) - <i>Diagramming and whiteboarding app that wraps the core draw.io editor.</i><br />
-<img src=".github/direct.png" align="top" width="20" /> [Dropbox](https://www.dropbox.com/) (`dropbox`) - <i>Securely share, store and do more with your content.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [duf](https://github.com/muesli/duf) (`duf`) - <i>Disk Usage/Free Utility - a better 'df' alternative.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [DustRacing2D](http://juzzlin.github.io/DustRacing2D/index.html) (`dustracing2d`) - <i>Dust Racing 2D is a traditional top-down car racing game including a level editor.</i><br />
 <img src=".github/debian.png" align="top" width="20" /> [Element](https://element.io/) (`element-desktop`) - <i>Secure and independent communication, connected via Matrix.</i><br />
@@ -191,6 +190,7 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/launchpad.png" align="top" width="20" /> [KeePassXC](https://keepassxc.org/) (`keepassxc`) - <i>Cross-Platform Password Manager.</i><br />
 <img src=".github/debian.png" align="top" width="20" /> [Keybase](https://keybase.io/) (`keybase`) - <i>End-to-end encryption for things that matter. Secure messaging and file-sharing.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [ksnip](https://github.com/ksnip/ksnip) (`ksnip`) - <i>Cross-platform screenshot and annotation tool.</i><br />
+<img src=".github/debian.png" align="top" width="20" /> [librewolf](https://librewolf.net) (`librewolf`) - <i>A fork of Firefox, focused on privacy, security and freedom.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [LSDeluxe](https://github.com/Peltoche/lsd) (`lsd`) - <i>The next gen 'ls' command.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Ludo](https://ludo.libretro.com/) (`ludo`) - <i>A minimalist frontend for emulators.</i><br />
 <img src=".github/launchpad.png" align="top" width="20" /> [Lutris](https://lutris.net/) (`lutris`) - <i>Open Gaming Platform.</i><br />
