@@ -1731,6 +1731,17 @@ function deb_battery-monitor() {
     SUMMARY="An X-platform utility tool developed on Python, notifies about charging, discharging, and critically low battery state of the battery on laptop."
 }
 
+function deb_librewolf(){
+    APT_KEY_URL="https://deb.librewolf.net/pubkey.gpg"
+    GPG_KEY_URL="https://deb.librewolf.net/keyring.gpg"
+    librewolf_distro=$(if echo " bullseye focal impish jammy uma una " | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
+    APT_LIST_NAME="librewolf"
+    APT_REPO_URL="deb [arch=amd64] http://deb.librewolf.net $librewolf_distro main"
+    PRETTY_NAME="LibreWolf"
+    WEBSITE="https://librewolf.net"
+    SUMMARY="A fork of Firefox, focused on privacy, security and freedom."
+}
+
 # Create an array of all the deb_ functions
 readonly APPS=($(declare -F | grep deb_ | sed 's|declare -f deb_||g' | sort))
 export CACHE_DIR="/var/cache/deb-get"
