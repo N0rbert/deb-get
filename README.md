@@ -154,6 +154,7 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/github.png" align="top" width="20" /> [fd](https://github.com/sharkdp/fd) (`fd`) - <i>A simple, fast and user-friendly alternative to 'find'.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Figma Linux](https://github.com/Figma-Linux/figma-linux) (`figma-linux`) - <i>Unofficial Electron-based Figma desktop app for Linux.</i><br />
 <img src=".github/launchpad.png" align="top" width="20" /> [Firefox ESR](https://www.mozilla.org/firefox/enterprise/) (`firefox-esr`) - <i> Firefox Extended Support Release.</i><br />
+<img src=".github/launchpad.png" align="top" width="20" /> [Flatpak](https://launchpad.net/~alexlarsson/+archive/ubuntu/flatpak) (`flatpak`) - <i>Linux application sandboxing and distribution framework.</i><br />
 <img src=".github/launchpad.png" align="top" width="20" /> [Foliate](https://johnfactotum.github.io/foliate/) (`foliate`) - <i>A simple and modern eBook viewer for Linux desktops.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Franz](https://meetfranz.com/) (`franz`) - <i>A messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and many many more.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [GameHub](https://tkashkin.github.io/projects/gamehub) (`gamehub`) - <i>Unified library for all your games.</i><br />
@@ -183,7 +184,8 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/launchpad.png" align="top" width="20" /> [KeePassXC](https://keepassxc.org/) (`keepassxc`) - <i>Cross-Platform Password Manager.</i><br />
 <img src=".github/debian.png" align="top" width="20" /> [Keybase](https://keybase.io/) (`keybase`) - <i>End-to-end encryption for things that matter. Secure messaging and file-sharing.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [ksnip](https://github.com/ksnip/ksnip) (`ksnip`) - <i>Cross-platform screenshot and annotation tool.</i><br />
-<img src=".github/debian.png" align="top" width="20" /> [librewolf](https://librewolf.net) (`librewolf`) - <i>A fork of Firefox, focused on privacy, security and freedom.</i><br />
+<img src=".github/launchpad.png" align="top" width="20" /> [LibreOffice](https://launchpad.net/~libreoffice/+archive/ubuntu/ppa) (`libreoffice`) - <i>LibreOffice Fresh.</i><br />
+<img src=".github/debian.png" align="top" width="20" /> [LibreWolf](https://librewolf.net) (`librewolf`) - <i>A fork of Firefox, focused on privacy, security and freedom.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [LSDeluxe](https://github.com/Peltoche/lsd) (`lsd`) - <i>The next gen 'ls' command.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Ludo](https://ludo.libretro.com/) (`ludo`) - <i>A minimalist frontend for emulators.</i><br />
 <img src=".github/launchpad.png" align="top" width="20" /> [Lutris](https://lutris.net/) (`lutris`) - <i>Open Gaming Platform.</i><br />
@@ -197,8 +199,8 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/launchpad.png" align="top" width="20" /> [Nextcloud Desktop](https://nextcloud.com/) (`nextcloud-desktop`) - <i>The self-hosted productivity platform that keeps you in control.</i><br />
 <img src=".github/direct.png" align="top" width="20" /> [NordVPN](https://nordvpn.com/) (`nordvpn`) - <i>VPN service for speed and security.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [OBS-cli](https://github.com/muesli/obs-cli) (`obs-cli`) - <i>OBS-cli is a command-line remote control for OBS.</i><br />
-<img src=".github/github.png" align="top" width="20" /> [Obsidian](https://obsidian.md/) (`obsidian`) - <i>A powerful knowledge base on top of a local folder of plain text Markdown files.</i><br />
 <img src=".github/launchpad.png" align="top" width="20" /> [OBS Studio (Fully Loaded)](https://obsproject.com/) (`obs-studio`) - <i>Free and open source software for video recording and live streaming.</i><br />
+<img src=".github/github.png" align="top" width="20" /> [Obsidian](https://obsidian.md/) (`obsidian`) - <i>A powerful knowledge base on top of a local folder of plain text Markdown files.</i><br />
 <img src=".github/direct.png" align="top" width="20" /> [ocenaudio](https://www.ocenaudio.com/) (`ocenaudio`) - <i>Easy, fast and powerful audio editor.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [ONLYOFFICE Desktop Editors](https://www.onlyoffice.com/en/desktop.aspx) (`onlyoffice-desktopeditors`) - <i>Free desktop office suite for document editing and collaboration.</i><br />
 <img src=".github/launchpad.png" align="top" width="20" /> [OpenRazer](https://openrazer.github.io/) (`openrazer-meta`) - <i>Open source driver and user-space daemon that allows you to manage Razer peripherals.</i><br />
@@ -240,6 +242,7 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/debian.png" align="top" width="20" /> [Microsoft Teams](https://www.microsoft.com/microsoft-teams/group-chat-software) (`teams`) - <i>Team chat and collaboration.</i><br />
 <img src=".github/direct.png" align="top" width="20" /> [TeamViewer](https://www.teamviewer.com/) (`teamviewer`) - <i>The Remote Desktop Software.</i><br />
 <img src=".github/debian.png" align="top" width="20" /> [Telegraf](https://github.com/influxdata/telegraf) (`telegraf`) - <i>The plugin-driven server agent for collecting & reporting metrics.</i><br />
+<img src=".github/launchpad.png" align="top" width="20" /> [Telegram](https://launchpad.net/~atareao/+archive/ubuntu/telegram) (`telegram`) - <i>Telegram Desktop for Linux. Both 32 and 64 bit.</i><br />
 <img src=".github/debian.png" align="top" width="20" /> [Terraform](https://www.terraform.io/) (`terraform`) - <i>Automate Infrastructure on Any Cloud.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Tidal-hifi](https://github.com/Mastermindzh/tidal-hifi) (`tidal-hifi`) - <i>Web version of listen.tidal.com running in Wlectron with hifi support thanks to widevine.</i><br />
 <img src=".github/direct.png" align="top" width="20" /> [Tixati](https://www.tixati.com/) (`tixati`) - <i>A New and Powerful P2P System.</i><br />
@@ -254,6 +257,7 @@ The software below can be installed, updated and removed using `deb-get`.
 <img src=".github/github.png" align="top" width="20" /> [Whalebird](https://whalebird.social/) (`whalebird`) - <i>A Mastodon, Pleroma, and Misskey client for desktop application.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [WhatsApp for Linux](https://github.com/eneshecan/whatsapp-for-linux) (`whatsapp-for-linux`) - <i>An unofficial WhatsApp desktop application for Linux.</i><br />
 <img src=".github/debian.png" align="top" width="20" /> [Wire](https://wire.com/) (`wire-desktop`) - <i>Secure collaboration platform.</i><br />
+<img src=".github/launchpad.png" align="top" width="20" /> [Y PPA Manager](https://launchpad.net/~webupd8team/+archive/ubuntu/y-ppa-manager) (`y-ppa-manager`) - <i>Easily manage PPAs: add, remove, purge and search in all Launchpad PPAs using a graphical interface.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Zenith](https://github.com/bvaisvil/zenith) (`zenith`) - <i>Sort of like 'top' or 'htop' but with zoom-able charts.</i><br />
 <img src=".github/github.png" align="top" width="20" /> [Zettlr](https://www.zettlr.com/) (`zettlr`) - <i>A Markdown Editor for the 21st century.</i><br />
 <img src=".github/direct.png" align="top" width="20" /> [Zoom](https://zoom.us/) (`zoom`) - <i>Video Conferencing, Cloud Phone, Webinars, Chat, Virtual Events.</i><br />
@@ -323,3 +327,4 @@ scope of the project in terms if what it is intended for.
   * [Ubuntu MATE’s Lead Creates a Nifty Tool to Help Install 3rd Party Deb Packages](https://news.itsfoss.com/deb-get-ubuntu/) - **It's FOSS**
   * [deb-get, an "apt-get" to install third-party software on Ubuntu](https://ubunlog.com/en/deb-get-un-apt-get-para-instalar-software-de-terceros-en-ubuntu/) - **ubunlog**
   * [deb-get, a utility for installing third-party software](https://www.linuxadictos.com/en/deb-get-una-utilidad-para-instalar-software-de-terceros.html) - **Linux Addicted**
+

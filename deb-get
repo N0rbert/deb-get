@@ -505,7 +505,7 @@ function deb_code() {
 
 function deb_rstudio() {
     case "${UBUNTU_CODENAME}" in
-        *)
+        bionic|focal|impish)
             URL="$(curl -s "https://www.rstudio.com/products/rstudio/download/" | grep "amd64.deb" | grep -v "tar.gz" | head -n1 | cut -d'"' -f2)"
             VERSION_PUBLISHED="$(echo "${URL}" | cut -d'-' -f2-3 | sed s'/-/+/')"
             PRETTY_NAME="RStudio"
@@ -2313,6 +2313,50 @@ function deb_librewolf(){
     PRETTY_NAME="LibreWolf"
     WEBSITE="https://librewolf.net"
     SUMMARY="A fork of Firefox, focused on privacy, security and freedom."
+}
+
+function deb_y-ppa-manager() {
+    case "${UBUNTU_CODENAME}" in
+        *)
+            PPA="ppa:webupd8team/y-ppa-manager"
+            PRETTY_NAME="Y PPA Manager"
+            WEBSITE="https://launchpad.net/~webupd8team/+archive/ubuntu/y-ppa-manager"
+            SUMMARY="Easily manage PPAs: add, remove, purge and search in all Launchpad PPAs using a graphical interface."
+            ;;
+    esac
+}
+
+function deb_telegram() {
+    case "${UBUNTU_CODENAME}" in
+        *)
+            PPA="ppa:atareao/telegram"
+            PRETTY_NAME="Telegram"
+            WEBSITE="https://launchpad.net/~atareao/+archive/ubuntu/telegram"
+            SUMMARY="Telegram Desktop for Linux. Both 32 and 64 bit."
+            ;;
+    esac
+}
+
+function deb_flatpak() {
+    case "${UBUNTU_CODENAME}" in
+        *)
+            PPA="ppa:alexlarsson/flatpak"
+            PRETTY_NAME="Flatpak"
+            WEBSITE="https://launchpad.net/~alexlarsson/+archive/ubuntu/flatpak"
+            SUMMARY="Linux application sandboxing and distribution framework."
+            ;;
+    esac
+}
+
+function deb_libreoffice() {
+    case "${UBUNTU_CODENAME}" in
+        *)
+            PPA="ppa:libreoffice/ppa"
+            PRETTY_NAME="LibreOffice"
+            WEBSITE="https://launchpad.net/~libreoffice/+archive/ubuntu/ppa"
+            SUMMARY="LibreOffice Fresh."
+            ;;
+    esac
 }
 
 # Create an array of all the deb_ functions
