@@ -154,6 +154,10 @@ function install_apt() {
         ${ELEVATE} wget -q "${APT_KEY_URL}" -O "/etc/apt/trusted.gpg.d/${APT_LIST_NAME}.asc"
     fi
 
+    if [ -n "${APT_KEY}" ]; then
+        ${ELEVATE} apt-key adv --recv-keys --keyserver keyserver.ubuntu.com "${APT_KEY}"
+    fi
+
     if [ -n "${GPG_KEY_URL}" ]; then
         if [ ! -d /usr/share/keyrings ]; then
             ${ELEVATE} mkdir -p /usr/share/keyrings 2>/dev/null
@@ -302,6 +306,7 @@ function validate_deb() {
     fi
 
     export APT_KEY_URL=""
+    export APT_KEY=""
     export GPG_KEY_URL=""
     export APT_LIST_NAME=""
     export APT_REPO_URL=""
@@ -2355,6 +2360,263 @@ function deb_libreoffice() {
             PRETTY_NAME="LibreOffice"
             WEBSITE="https://launchpad.net/~libreoffice/+archive/ubuntu/ppa"
             SUMMARY="LibreOffice Fresh."
+            ;;
+    esac
+}
+
+function deb_birdtray() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal)
+            PPA="ppa:linuxuprising/apps"
+            PRETTY_NAME="BirdTray"
+            WEBSITE="https://www.linuxuprising.com/2018/10/birdtray-thunderbird-tray-icon-with-new.html"
+            SUMMARY="system tray notifications for Thunderbird."
+            ;;
+    esac
+}
+
+function deb_glava() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish)
+            PPA="ppa:linuxuprising/apps"
+            PRETTY_NAME="GLava"
+            WEBSITE="https://github.com/wacossusca34/glava"
+            SUMMARY="OpenGL audio spectrum visualizer."
+            ;;
+    esac
+}
+
+function deb_pdfarranger() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish)
+            PPA="ppa:linuxuprising/apps"
+            PRETTY_NAME="PDF Arranger"
+            WEBSITE="https://github.com/pdfarranger/pdfarranger"
+            SUMMARY="Merge, split and re-arrange pages from PDF documents."
+            ;;
+    esac
+}
+
+function deb_tlpui() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish)
+            PPA="ppa:linuxuprising/apps"
+            PRETTY_NAME="TLPUI"
+            WEBSITE="https://github.com/d4nj1/TLPUI"
+            SUMMARY="A GTK-UI to change TLP configuration files easily."
+            ;;
+    esac
+}
+
+function deb_vlc-plugin-bittorrent() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish)
+            PPA="ppa:linuxuprising/apps"
+            PRETTY_NAME="VLC BitTorrent"
+            WEBSITE="https://github.com/johang/vlc-bittorrent"
+            SUMMARY="Bittorrent plugin for VLC."
+            ;;
+    esac
+}
+
+function deb_boot-repair() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:yannubuntu/boot-repair"
+            PRETTY_NAME="Boot Repair"
+            WEBSITE="https://launchpad.net/boot-repair"
+            SUMMARY="Graphical tool to repair boot problems."
+            ;;
+    esac
+}
+
+function deb_guayadeque() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:anonbeat/guayadeque"
+            PRETTY_NAME="Guayadeque Music Player"
+            WEBSITE="http://www.guayadeque.org"
+            SUMMARY="Lightweight and easy-to-use music player that supports smart playlists and huge music collections."
+            ;;
+    esac
+}
+
+function deb_my-weather-indicator() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:atareao/atareao"
+            # TODO other 53 useful applications are also possible to install, see https://launchpad.net/~atareao/+archive/ubuntu/atareao?field.series_filter=bionic
+            PRETTY_NAME="My Weather Indicator"
+            WEBSITE="http://www.guayadeque.org"
+            SUMMARY="Get weather information for your town with My-Weather-Indicator."
+            ;;
+    esac
+}
+
+function deb_yandex-disk() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            APT_KEY="EFC4571D7C90E5AF"
+            APT_LIST_NAME="yandex-disk"
+            APT_REPO_URL="deb http://repo.yandex.ru/yandex-disk/deb/ stable main"
+            ;;
+    esac
+    PRETTY_NAME="Yandex.Disk"
+    WEBSITE="https://disk.yandex.com"
+    SUMMARY="Yandex.Disk keeps your files with you at all times."
+}
+
+function deb_yd-tools() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:slytomcat/ppa"
+            PRETTY_NAME="Yandex.Disk Tools"
+            WEBSITE="https://github.com/slytomcat/yandex-disk-indicator"
+            SUMMARY="Yandex.Disk indicator for Ubuntu desktop panel."
+            ;;
+    esac
+}
+
+function deb_virtualbox(){
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            APT_KEY_URL="https://www.virtualbox.org/download/oracle_vbox_2016.asc"
+            APT_LIST_NAME="virtualbox"
+            APT_REPO_URL="deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian ${UBUNTU_CODENAME} contrib"
+            ;;
+    esac
+    PRETTY_NAME="VirtualBox"
+    WEBSITE="https://www.virtualbox.org"
+    SUMMARY="General-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use."
+}
+
+function deb_dsview() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:gekkio/dsview"
+            PRETTY_NAME="Unofficial DreamSourceLab DSView package"
+            WEBSITE="https://launchpad.net/~gekkio/+archive/ubuntu/dsview"
+            SUMMARY="DreamSourceLab fork of PulseView. PulseView is a Qt-based LA/scope/MSO GUI for sigrok."
+            ;;
+    esac
+}
+
+function deb_freecad() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish)
+            PPA="ppa:freecad-maintainers/freecad-stable"
+            PRETTY_NAME="FreeCAD"
+            WEBSITE="https://www.freecadweb.org"
+            SUMMARY="Extensible Open Source CAx program."
+            ;;
+    esac
+}
+
+function deb_kodi() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:team-xbmc/ppa"
+            PRETTY_NAME="Kodi"
+            WEBSITE="https://kodi.tv"
+            SUMMARY="Open Source Home Theatre, formerly known as XBMC."
+            ;;
+    esac
+}
+
+function deb_julia() {
+    case "${UBUNTU_CODENAME}" in
+        bionic)
+            PPA="ppa:jonathonf/julialang"
+            PRETTY_NAME="Julia"
+            WEBSITE="https://julialang.org"
+            SUMMARY="High-performance programming language for technical computing."
+            ;;
+    esac
+}
+
+function deb_firefox-mozilla-build() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            APT_KEY="2667CA5C"
+            APT_LIST_NAME="ubuntuzilla"
+            APT_REPO_URL="deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main"
+            ;;
+    esac
+    PRETTY_NAME="Mozilla Firefox"
+    WEBSITE="https://sourceforge.net/p/ubuntuzilla/wiki/Main_Page/"
+    SUMMARY="Mozilla Firefox, official Mozilla build, packaged for Ubuntu by the Ubuntuzilla project."
+}
+
+function deb_firefox-esr-mozilla-build() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            APT_KEY="2667CA5C"
+            APT_LIST_NAME="ubuntuzilla"
+            APT_REPO_URL="deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main"
+            ;;
+    esac
+    PRETTY_NAME="Mozilla Firefox ESR"
+    WEBSITE="https://sourceforge.net/p/ubuntuzilla/wiki/Main_Page/"
+    SUMMARY="Mozilla Firefox ESR, official Mozilla build, packaged for Ubuntu by the Ubuntuzilla project."
+}
+
+function deb_thunderbird-mozilla-build() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            APT_KEY="2667CA5C"
+            APT_LIST_NAME="ubuntuzilla"
+            APT_REPO_URL="deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main"
+            ;;
+    esac
+    PRETTY_NAME="Mozilla Thunderbird"
+    WEBSITE="https://sourceforge.net/p/ubuntuzilla/wiki/Main_Page/"
+    SUMMARY="Mozilla Thunderbird, official Mozilla build, packaged for Ubuntu by the Ubuntuzilla project."
+}
+
+function deb_seamonkey-mozilla-build() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            APT_KEY="2667CA5C"
+            APT_LIST_NAME="ubuntuzilla"
+            APT_REPO_URL="deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main"
+            ;;
+    esac
+    PRETTY_NAME="Mozilla Seamonkey"
+    WEBSITE="https://sourceforge.net/p/ubuntuzilla/wiki/Main_Page/"
+    SUMMARY="Mozilla Seamonkey, official Mozilla build, packaged for Ubuntu by the Ubuntuzilla project."
+}
+
+function deb_doublecmd-gtk() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish)
+            APT_KEY="61508B60C33A8925"
+            APT_LIST_NAME="home:Alexx2000"
+            APT_REPO_URL="deb http://download.opensuse.org/repositories/home:/Alexx2000/xUbuntu_${UBUNTU_RELEASE}/ /"
+            ;;
+    esac
+    PRETTY_NAME="Double Commander"
+    WEBSITE="http://doublecmd.sourceforge.net"
+    SUMMARY="Free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas."
+}
+
+function deb_clipgrab() {
+    case "${UBUNTU_CODENAME}" in
+        bionic|focal|impish|jammy)
+            PPA="ppa:tomtomtom/clipgrab"
+            PRETTY_NAME="ClipGrab"
+            WEBSITE="https://clipgrab.org"
+            SUMMARY="Download and convert videos from various online portals (e.g. YouTube)."
+            ;;
+    esac
+}
+
+function deb_nsp() {
+    case "${UBUNTU_CODENAME}" in
+        bionic)
+            PPA="ppa:jpc-cermics/nsp"
+            PRETTY_NAME="Nsp"
+            WEBSITE="http://cermics.enpc.fr/~jpc/nsp-tiddly/mine.html"
+            SUMMARY="Nsp is a GPL Scientific Software Package."
             ;;
     esac
 }
