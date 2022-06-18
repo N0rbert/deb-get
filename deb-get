@@ -517,6 +517,13 @@ function deb_rstudio() {
             WEBSITE="https://www.rstudio.com/"
             SUMMARY="Professional software for data science teams."
             ;;
+        jammy)
+            URL="$(curl -s "https://www.rstudio.com/products/rstudio/download/" | grep jammy | grep "amd64.deb" | grep -v "tar.gz" | head -n1 | cut -d'"' -f2)"
+            VERSION_PUBLISHED="$(echo "${URL}" | cut -d'-' -f2-3 | sed s'/-/+/')"
+            PRETTY_NAME="RStudio"
+            WEBSITE="https://www.rstudio.com/"
+            SUMMARY="Professional software for data science teams."
+            ;;
     esac
 }
 
@@ -2617,6 +2624,17 @@ function deb_nsp() {
             PRETTY_NAME="Nsp"
             WEBSITE="http://cermics.enpc.fr/~jpc/nsp-tiddly/mine.html"
             SUMMARY="Nsp is a GPL Scientific Software Package."
+            ;;
+    esac
+}
+
+function deb_distrobox() {
+    case "${UBUNTU_CODENAME}" in
+        focal|impish|jammy)
+            PPA="ppa:michel-slm/distrobox"
+            PRETTY_NAME="Distrobox"
+            WEBSITE="https://distrobox.privatedns.org/"
+            SUMMARY="Use any linux distribution inside your terminal."
             ;;
     esac
 }
